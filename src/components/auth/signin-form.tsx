@@ -18,20 +18,20 @@ export const SignInForm = () => {
 
 	return (
 
-		<form
-			action={action}
-		>
-			<label>
+		<form action={action} className="flex flex-col gap-6 shadow-md border-1 bg-gray-50 w-1/4 p-6 rounded-md" >
+			<label className="flex justify-between items-center">
 				Email
-				<input name="email" type="email" />
+				<input name="email" type="email" placeholder="Enter email" 
+					className="w-3/4 p-3 rounded-md outline outline-1"
+				/>
 			</label>
-			<br />
-			<label>
+			<label className="flex justify-between items-center">
 				Password
-				<input name="password" type="password" />
+				<input name="password" type="password" placeholder="Enter password"
+					className="w-3/4 p-3 rounded-md outline outline-1"
+				/>
 			</label>
-			<br />
-			<button>Sign In</button>
+			<button className="py-3 rounded-md outline outline-1 hover:bg-gray-100">Sign In</button>
 		</form>
 	)
 }
