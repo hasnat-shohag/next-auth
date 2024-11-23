@@ -18,7 +18,7 @@ export const SignInForm = () => {
 
 	return (
 
-		<form action={action} className="flex flex-col gap-6 shadow-md border-1 bg-gray-50 w-1/4 p-6 rounded-md" >
+		<form action={action} className="flex flex-col gap-6 shadow-md border-1 bg-gray-50 w-1/2 xl:w-1/4 p-6 rounded-md" >
 			<label className="flex justify-between items-center">
 				Email
 				<input name="email" type="email" placeholder="Enter email" 
@@ -31,7 +31,7 @@ export const SignInForm = () => {
 					className="w-3/4 p-3 rounded-md outline outline-1"
 				/>
 			</label>
-			<button className="py-3 rounded-md outline outline-1 hover:bg-gray-100">Sign In</button>
+			<button type="submit" className="py-3 rounded-md outline outline-1 hover:bg-gray-100">Sign In</button>
 		</form>
 	)
 }

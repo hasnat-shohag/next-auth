@@ -8,7 +8,10 @@ export function SignIn() {
         await signIn()
       }}
     >
-      <button type="submit">Sign in</button>
+      <button 
+        type="submit" 
+        className="px-5 py-2 mt-2 outline outline-1 rounded-lg inline-block"
+      >Sign in</button>
     </form>
   )
 }
