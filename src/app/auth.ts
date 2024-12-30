@@ -26,12 +26,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   
   providers: [
     Credentials({
-      name: "Email",
+      name: "Credentials",
       credentials: {
         email: { label: "Email", type: "email" },
         password: { label: "Password", type: "password" },
       },
       authorize: async (credentials) => {
+        console.log("Credentials: ", credentials);
         const { email, password } = credentials;
 
         if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASS) {
