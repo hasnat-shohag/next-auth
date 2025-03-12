@@ -1,0 +1,7 @@
+services:
+  development:
+    build: .
+    env_file:
+      - .env.local
+    ports:
+      - "80:3001"

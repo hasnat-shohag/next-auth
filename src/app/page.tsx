@@ -22,15 +22,15 @@ export default async function Home() {
       { session
           ? (
             <>
-                  <h1>{session.user?.name}</h1>
-                  <SignOutButton />
-              </>
+              <h1>{session.user?.name}</h1>
+              <SignOutButton />
+            </>
           )
           : (
             <>
-                  <h1>Guest</h1>
-                  <SignIn />
-              </>
+              <h1>Guest</h1>
+              <SignIn />
+            </>
             )}
       </div>
 
